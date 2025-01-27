@@ -1,11 +1,13 @@
 import React from "react";
-import {persona} from "/src/modelos/persona";
+import {persona} from './modelos/persona';
 
 const tarjetaP: React.FC<persona>= ({nombre, ocupacion, pais}) => {
     return (
-        <h3>{nombre}</h3>
-        <p><strong>Ocupación:</strong>{ocupacin}</p>
-        <p><strong>Pais:</strong>{pais}</p>
+        <div>
+            <h3>{nombre}</h3>
+            <p><strong>Ocupación:</strong> {ocupacion}</p>
+            <p><strong>País:</strong> {pais}</p>
+        </div>
     );
 };
 
